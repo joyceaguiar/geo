@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e1e2e3; /* Tom pastel escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #444;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f5f6; /* Rosa suave e masculino */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.title {
+    font-size: 3em;
+    color: #5d6a7d; /* Azul escuro pastel */
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Descrição */
+.description {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #7d8b97; /* Cinza azulado */
+}
+
+/* Botão */
+.start-button {
+    background-color: #7d8b97; /* Azul pastel escuro */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.start-button:hover {
+    background-color: #5d6a7d; /* Tom um pouco mais escuro */
+    transform: scale(1.1); /* Efeito de "zoom" ao passar o mouse */
+}
+
+/* Mensagem */
+.message {
+    font-size: 2.5em;
+    color: #5d6a7d;
+    margin-top: 30px;
+    display: none;
+    font-family: 'Dancing Script', cursive; /* Fonte cursiva para suavizar */
+}
+
+/* Animação da mensagem */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação do título */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
